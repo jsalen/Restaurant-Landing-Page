@@ -4,27 +4,45 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Pizzawesome!</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+			integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>Joe's Pizza!</title>
 	</head>
 	<body>
-		<header>
-			<div class="header__logo"></div>
-			<nav class="header__nav">
-				<ul>
-					<li>Nosotros</li>
-					<li>Menú</li>
-					<li>Unicación</li>
-					<li>Testimonios</li>
-					<li>Contacto</li>
-				</ul>
+		<header class="header">
+			<img
+				class="header__logo"
+				id="header-logo"
+				src="./assets/images/pizza-logo.svg"
+				alt="Logo de la Empresa"
+			/>
+			<nav class="header__nav" id="header-nav">
+				<a href="#about-us">About us</a>
+				<a href="#menu">Menu</a>
+				<a href="#location">Location</a>
+				<a href="#feedback">Testimony</a>
+				<a href="#contact-us">Contact us</a>
 			</nav>
+			<a class="header__hamburger" onClick="toggleMenu()">
+				<i class="fas fa-bars"></i>
+			</a>
 		</header>
 		<main>
 			<section class="intro">
 				<h1 class="intro__title">
 					Disfruta de una maravillosa experiencia
 				</h1>
-				<a href="" class="intro__link">Conoce el menú</a>
+				<a href="#menu" class="intro__link">Conoce el menú</a>
 			</section>
 			<section class="about-us">
 				<article class="about-us__card">
@@ -40,7 +58,7 @@
 					<p class="about-us__card--description"></p>
 				</article>
 			</section>
-			<section class="menu">
+			<section id="menu" class="menu">
 				<h2 class="menu__title"></h2>
 				<article class="menu-item">
 					<img src="" alt="" class="menu-item__img" />
@@ -104,5 +122,6 @@
 				</article>
 			</section>
 		</main>
+		<script src="./assets/scripts/index.js"></script>
 	</body>
 </html>
