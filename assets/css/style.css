@@ -21,7 +21,7 @@ html {
 	display: flex;
 	position: relative;
 	overflow: hidden;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	border-bottom: 1px solid #cecece;
 }
 
@@ -42,14 +42,6 @@ html {
 	font-size: var(--secondary-text);
 	color: black;
 	text-decoration: none;
-}
-
-.header__hamburger > i {
-	font-size: 30px;
-	display: block;
-	position: absolute;
-	top: 30px;
-	right: 25px;
 }
 
 .intro {
