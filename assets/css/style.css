@@ -23,6 +23,15 @@ html {
 	scroll-behavior: smooth;
 }
 
+h2 {
+	width: 100%;
+	padding-top: 55px;
+	font-size: var(--primary-text);
+	font-weight: 700;
+	color: var(--off-white);
+	text-align: center;
+}
+
 .header {
 	width: 100%;
 	min-width: 320px;
@@ -106,16 +115,8 @@ html {
 .about-us {
 	width: 100%;
 	min-width: 320px;
-	height: 420px;
+	height: 400px;
 	background-color: var(--bright-orange);
-}
-.about-us__title {
-	width: 100%;
-	padding-top: 55px;
-	font-size: var(--primary-text);
-	font-weight: 700;
-	color: var(--off-white);
-	text-align: center;
 }
 
 .about-us__slider {
@@ -181,4 +182,38 @@ html {
 	line-height: 2rem;
 	text-align: justify;
 	color: var(--pepperoni);
+}
+
+.location {
+	width: 100%;
+	min-width: 320px;
+	height: 440px;
+	display: flex;
+	flex-direction: column;
+	background: rgb(214, 141, 42);
+	background: linear-gradient(
+		180deg,
+		rgba(214, 141, 42, 1) 0%,
+		rgba(182, 127, 51, 1) 75%,
+		rgba(116, 81, 33, 1) 100%
+	);
+}
+
+h2.location__title {
+	padding-top: 35px;
+}
+
+.location__card {
+	width: 70%;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+
+.location__card--description {
+	padding-top: 15px;
+	font-size: var(--secondary-text);
+	font-weight: 400;
+	line-height: 1.5rem;
+	text-align: center;
+	color: var(--off-white);
 }
