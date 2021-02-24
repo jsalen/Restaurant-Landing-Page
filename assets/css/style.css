@@ -217,3 +217,22 @@ h2.location__title {
 	text-align: center;
 	color: var(--off-white);
 }
+
+.btn {
+	display: flex;
+	justify-content: flex-end;
+	position: sticky;
+	bottom: 0;
+}
+
+.btn__button {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+	font-size: 4rem;
+	border-radius: 50%;
+	color: rgba(66, 64, 64, 1);
+	background-color: transparent;
+	border: none;
+}
