@@ -64,21 +64,30 @@ h2 {
 	text-decoration: none;
 }
 
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: inherit;
+	background-color: rgba(21, 21, 21, 0.25);
+}
+
 .intro {
 	width: 100%;
 	min-width: 320px;
 	height: 300px;
 	position: relative;
+	display: flex;
+	align-items: center;
 	margin: 0 auto;
 	background-image: url(../images/pizza-intro-hero.jpg);
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-repeat: no-repeat;	
 }
 
 .intro__title {
-	padding: 80px 15px;
+	position: absolute;
+	padding: 0 15px;
 	font-size: var(--primary-text);
 	font-weight: 700;
 	line-height: 3rem;
