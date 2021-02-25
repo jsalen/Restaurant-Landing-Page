@@ -2,6 +2,13 @@ const headerNav = document.getElementById('header-nav')
 const headerLogo = document.getElementById('header-logo')
 const hamburger = document.querySelector('.hamburger')
 
+let infScroll = new InfiniteScroll('.menu', {
+	path: '.pagination__next',
+	append: '.menu-item',
+	button: '.view-more',
+	scrollThreshold: false,
+})
+
 const openHamburger = () => {
 	hamburger.classList.toggle('is-active')
 	toggleMenu()

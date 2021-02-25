@@ -42,7 +42,7 @@ h2 {
 	overflow: hidden;
 	justify-content: space-around;
 	border-bottom: 1px solid #cecece;
-	background-color: var(--solid-grey);
+	background-image: url('../images/menu-background.jpg');
 }
 
 .header__logo {
