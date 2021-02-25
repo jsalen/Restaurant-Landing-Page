@@ -249,6 +249,9 @@ h2.location__title {
 .menu {
 	width: 100%;
 	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 20px;
 	padding-bottom: 32px;
 	background-image: url('../images/menu-background.jpg');
 	background-position: center;
@@ -260,7 +263,8 @@ h2.location__title {
 }
 
 .menu-item {
-	width: 80%;
+	width: 320px;
+	max-width: 320px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -274,4 +278,19 @@ h2.location__title {
 	transform: scale(1.06);
 	background-color: rgba(115, 115, 115, 0.6);
 	transition: all 0.3s;
+}
+
+.menu-item__title {
+	margin: 8px 0;
+	font-size: var(--primary-text);
+	font-weight: 700;
+	color: var(--tomate);
+}
+
+.menu-item__description {
+	font-size: var(--secondary-text);
+	font-weight: 400;
+	line-height: 1.8rem;
+	color: var(--pepperoni);
+	text-align: justify;
 }
