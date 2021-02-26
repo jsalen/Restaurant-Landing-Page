@@ -1,6 +1,8 @@
 const headerNav = document.getElementById('header-nav')
 const headerLogo = document.getElementById('header-logo')
 const hamburger = document.querySelector('.hamburger')
+const nameForm = document.querySelector('#name-form')
+const msgForm = document.querySelector('#message')
 
 const infScroll = new InfiniteScroll('.menu-container', {
 	path: '.pagination__next',
@@ -27,9 +29,17 @@ const toggleMenu = () => {
 }
 
 const formSent = () => {
-	swal(
-		'Thanks for reaching out!',
-		"We'll get in touch with you ASAP!",
-		'success'
-	)
+	if (nameForm.value === '' || msgForm.value === '') {
+		swal(
+			'What?',
+			'You need to give us your name and a message, please.',
+			'error'
+		)
+	} else {
+		swal(
+			`Thanks, ${nameForm.value}`,
+			'We will get back in touch with you ASAP!',
+			'success'
+		)
+	}
 }

@@ -153,14 +153,14 @@
 					<!-- Swal script -->
 					<form action="">
 						<div class="form-control">
-							<input type="text" name="name" id="name" required>
+							<input type="text" name="name" id="name-form" required>
 							<label for="name"><span>Name</span></label>
 						</div>
 						<div class="form-control">
 							<textarea name="message" id="message" rows="4" cols="50"" required></textarea>
 							<label for="message"><span>Message</span></label>
 						</div>
-						<button class="btn-control" onclick="formSent()">Send message</button>
+						<button class="btn-control" onclick="formSent(); return false;">Send message</button>
 					</form>
 				</div>
 
