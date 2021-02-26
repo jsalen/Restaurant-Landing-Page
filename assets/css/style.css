@@ -230,7 +230,8 @@ h2.location__title {
 	width: 100%;
 	height: auto;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
 	padding: 0 20px;
 	padding-bottom: 32px;
 	background-image: url('../images/menu-background.jpg');
@@ -240,6 +241,13 @@ h2.location__title {
 .menu__title {
 	font-size: var(--primary-text);
 	color: var(--pepperoni);
+}
+
+.menu-container {
+	width: 100%;
+	max-width: 997px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .menu-item {
@@ -277,6 +285,7 @@ h2.location__title {
 
 .btn-control {
 	width: 100%;
+	max-width: 350px;
 	height: 45px;
 	background-color: var(--dark-orange);
 	border: 1px solid var(--solid-grey);
@@ -400,7 +409,7 @@ footer {
 .footer__links {
 	width: 100%;
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -416,6 +425,11 @@ footer {
 	color: var(--off-white);
 	text-decoration: none;
 	border-radius: 8px;
+}
+
+.footer__links a:nth-child(2) {
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 .footer__links span {

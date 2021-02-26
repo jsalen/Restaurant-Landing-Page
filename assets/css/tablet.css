@@ -3,15 +3,23 @@
 }
 
 .about-us__slider {
-	flex-direction: column;
-	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .about-us__slider::-webkit-scrollbar {
-	background-color: none;
+	background-color: transparent;
 	height: 0;
 }
 
 .about-us__slider::-webkit-scrollbar-thumb {
-	background-color: none;
+	background-color: transparent;
+	height: 0;
+}
+
+.about-us__slider::before,
+.about-us__slider::after {
+	content: none;
+	flex: none;
 }

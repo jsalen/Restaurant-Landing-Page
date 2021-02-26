@@ -1,0 +1,29 @@
+.hamburger {
+	display: none;
+}
+
+.header__nav {
+	width: 320px;
+	display: flex;
+	padding-top: 15px;
+}
+
+.header__nav a {
+	height: 30px;
+	font-size: 1.6rem;
+	text-align: center;
+	border-bottom: 2px solid transparent;
+	transition: all 0.5s ease-out;
+}
+
+.header__nav a:hover {
+	border-bottom: 2px solid black;
+}
+
+.intro {
+	justify-content: center;
+}
+
+.menu {
+	justify-content: center;
+}
