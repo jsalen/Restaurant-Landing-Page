@@ -18,6 +18,7 @@
 			integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
 			crossorigin="anonymous"
 		/>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<link rel="stylesheet" href="./assets/css/tablet.css" media="(min-width: 425px)">
 		<link rel="stylesheet" href="./assets/css/laptop.css" media="(min-width: 768px)">
@@ -159,7 +160,7 @@
 							<textarea name="message" id="message" rows="4" cols="50"" required></textarea>
 							<label for="message"><span>Message</span></label>
 						</div>
-						<button class="btn-control">Send message</button>
+						<button class="btn-control" onclick="formSent()">Send message</button>
 					</form>
 				</div>
 

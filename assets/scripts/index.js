@@ -25,3 +25,11 @@ const toggleMenu = () => {
 		headerNav.style.display = 'block'
 	}
 }
+
+const formSent = () => {
+	swal(
+		'Thanks for reaching out!',
+		"We'll get in touch with you ASAP!",
+		'success'
+	)
+}
